@@ -1,5 +1,22 @@
 require("./keep-alive");
-require("dotenv").config();
+require('dotenv').config();
+
+// === Validate required environment variables ===
+const requiredEnv = {
+  BOT_TOKEN: process.env.BOT_TOKEN,
+  CLIENT_ID: process.env.CLIENT_ID,
+  OWNER_ID: process.env.OWNER_ID,
+};
+
+let missingVars = Object.entries(requiredEnv)
+  .filter(([key, value]) => !value)
+  .map(([key]) => `❌ Unable to locate ${key} in environment variables.`);
+
+if (missingVars.length > 0) {
+  missingVars.forEach(msg => console.error(msg));
+  process.exit(1); // ⛔ Stop the bot if any are missing
+}
+
 
 const {
   Client,
