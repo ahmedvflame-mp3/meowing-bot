@@ -1,0 +1,22 @@
+{
+  "name": "meowing-bot",
+  "version": "1.0.8",
+  "description": "A simple open-source Discord bot that loves to meow.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "meow",
+    "discord.js"
+  ],
+  "author": "AhmedVFlame",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "discord.js": "^14.21.0",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0"
+  }
+}
