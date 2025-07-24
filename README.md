@@ -16,7 +16,7 @@ A simple open-source Discord bot using slash commands and a lightweight keep-ali
 - Node.js (v18+ recommended)
 - `discord.js`
 - `express`
-
+- `dotenv`
 Install dependencies:
 
 ```bash
