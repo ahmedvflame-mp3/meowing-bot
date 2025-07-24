@@ -1,6 +1,6 @@
 {
   "name": "meowing-bot",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A simple open-source Discord bot that loves to meow.",
   "main": "index.js",
   "scripts": {
